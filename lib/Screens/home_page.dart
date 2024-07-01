@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:toku_app/Screens/colors.dart';
+import 'package:toku_app/Screens/family_members_page.dart';
 import 'package:toku_app/Screens/numbers_page.dart';
 
 import '../Widget/HomeItem.dart';
@@ -15,10 +17,10 @@ List<String> tittle = [
   "Colors",
   "Phrases",
 ];
-List<Widget> pages = [
+List<Widget> pages = const [
 NumberPage(),
-NumberPage(),
-NumberPage(),
+FamilyPage(),
+ColorsPage(),
 NumberPage(),
 ];
 
@@ -29,7 +31,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-        itemCount: 4,
+        itemCount: pages.length,
         itemBuilder: (BuildContext context, int index) {
           return HomeItem(
             page: pages[index] ,

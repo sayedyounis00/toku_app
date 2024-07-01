@@ -19,7 +19,7 @@ class Item extends StatelessWidget {
           Container(
             height: 100,
             width: 100,
-            color: Colors.white,
+            color: Colors.orange[100],
             child: Image.asset(numberData.assetpath),
           ),
           Padding(

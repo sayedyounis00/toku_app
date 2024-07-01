@@ -3,8 +3,15 @@ import 'package:toku_app/Widget/item.dart';
 
 import '../Model/item_data.dart';
 
-List<ItemData> numberData = [
-  ItemData(
+
+
+class NumberPage extends StatelessWidget {
+  const  NumberPage({
+    super.key,
+  });
+
+  final List<ItemData> numberData =const  [
+   ItemData(
       assetpath: 'assets/images/numbers/number_one.png',
       enName: "one",
       jpName: 'jpName'),
@@ -45,11 +52,6 @@ List<ItemData> numberData = [
       enName: 'ten',
       jpName: 'jpName'),
 ];
-
-class NumberPage extends StatelessWidget {
-  const NumberPage({
-    super.key,
-  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
