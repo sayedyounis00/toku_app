@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../Model/item_data.dart';
+
 class Item extends StatelessWidget {
-  const Item({super.key});
+  const Item({required this.numberData, required this.color});
+
+  final ItemData numberData;
+  final Color color;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      color: color,
       height: 100,
       width: double.infinity,
       child: Row(
@@ -14,15 +20,15 @@ class Item extends StatelessWidget {
             height: 100,
             width: 100,
             color: Colors.white,
-            child: Image.asset("assets/images/numbers/number_one.png"),
+            child: Image.asset(numberData.assetpath),
           ),
-          const Padding(
-            padding: EdgeInsets.only(left: 16.0),
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("eng.name"),
-                Text("jap.name"),
+                Text(numberData.enName),
+                Text(numberData.jpName),
               ],
             ),
           ),
