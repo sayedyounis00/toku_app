@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/Screens/numbers.dart';
+import 'package:toku_app/Screens/numbers_page.dart';
 
 import '../Widget/HomeItem.dart';
 
