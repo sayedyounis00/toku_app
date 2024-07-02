@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/Screens/colors.dart';
 import 'package:toku_app/Screens/family_members_page.dart';
 import 'package:toku_app/Screens/numbers_page.dart';
+import 'package:toku_app/Screens/phrases_page.dart';
 
 import '../Widget/HomeItem.dart';
 
@@ -21,7 +22,7 @@ List<Widget> pages = const [
 NumberPage(),
 FamilyPage(),
 ColorsPage(),
-NumberPage(),
+PhrasesPage(),
 ];
 
 class HomePage extends StatelessWidget {

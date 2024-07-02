@@ -8,44 +8,44 @@ class FamilyPage extends StatelessWidget {
     super.key,
   });
 
-  final List<ItemData> memberData = const [
-    ItemData(
+  final List<ItemModel> memberData = const [
+    ItemModel(
         assetpath: 'assets/images/family_member/family_father.png',
         enName: "father",
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_mother.png',
         enName: 'mother',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_daughter.png',
         enName: 'daughter',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_grandfather.png',
         enName: 'family_grandfather',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_grandmother.png',
         enName: 'grandmother',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_older_brother.png',
         enName: 'older brother',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_older_sister.png',
         enName: 'older sister',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_son.png',
         enName: 'son',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_younger_brother.png',
         enName: 'younger brother',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/family_member/family_younger_sister.png',
         enName: 'younger sister',
         jpName: 'jpName'),
@@ -60,7 +60,7 @@ class FamilyPage extends StatelessWidget {
         itemCount: memberData.length,
         itemBuilder: (BuildContext context, int index) {
           return Item(
-            numberData: memberData[index],
+            itemData: memberData[index],
             color: Colors.orange,
           );
         },

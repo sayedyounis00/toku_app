@@ -10,44 +10,44 @@ class NumberPage extends StatelessWidget {
     super.key,
   });
 
-  final List<ItemData> numberData =const  [
-   ItemData(
+  final List<ItemModel> numberData =const  [
+   ItemModel(
       assetpath: 'assets/images/numbers/number_one.png',
       enName: "one",
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_two.png',
       enName: 'two',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_three.png',
       enName: 'three',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_four.png',
       enName: 'four',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_five.png',
       enName: 'five',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_six.png',
       enName: 'six',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_seven.png',
       enName: 'seven',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_eight.png',
       enName: 'eight',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_nine.png',
       enName: 'nine',
       jpName: 'jpName'),
-  ItemData(
+  ItemModel(
       assetpath: 'assets/images/numbers/number_ten.png',
       enName: 'ten',
       jpName: 'jpName'),
@@ -62,7 +62,7 @@ class NumberPage extends StatelessWidget {
         itemCount: numberData.length,
         itemBuilder: (BuildContext context, int index) {
           return Item(
-            numberData: numberData[index],
+            itemData: numberData[index],
             color: Colors.teal,
           );
         },

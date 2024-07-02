@@ -8,36 +8,36 @@ class ColorsPage extends StatelessWidget {
     super.key,
   });
 
-  final List<ItemData> colorsData = const [
-    ItemData(
+  final List<ItemModel> colorsData = const [
+    ItemModel(
         assetpath: 'assets/images/colors/color_black.png',
         enName: "black",
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_brown.png',
         enName: 'brown',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_dusty_yellow.png',
         enName: 'dusty_yellow',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_gray.png',
         enName: 'color_gray',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_green.png',
         enName: 'grandmother',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_red.png',
         enName: ' color_green',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/color_white.png',
         enName: 'color_white',
         jpName: 'jpName'),
-    ItemData(
+    ItemModel(
         assetpath: 'assets/images/colors/yellow.png',
         enName: 'color_yellow',
         jpName: 'jpName'),
@@ -52,7 +52,7 @@ class ColorsPage extends StatelessWidget {
         itemCount: colorsData.length,
         itemBuilder: (BuildContext context, int index) {
           return Item(
-            numberData: colorsData[index],
+            itemData: colorsData[index],
             color: Colors.orange,
           );
         },
